@@ -82,6 +82,18 @@ body {
   border-radius: 0.5rem;
   padding: 2rem;
 }
+.container .body-section .form-section .eye-icon {
+  display: flex;
+  position: relative;
+  transform: translateY(-7rem) translateX(6.5rem);
+  cursor: pointer;
+}
+.container .body-section .form-section .eye-icon2 {
+  display: flex;
+  position: relative;
+  transform: translateY(-8.8rem) translateX(5rem);
+  cursor: pointer;
+}
 .container .body-section .form-section form {
   display: flex;
   flex-direction: column;
@@ -89,6 +101,20 @@ body {
   align-items: end;
   text-align: right;
   width: 100%;
+}
+.container .body-section .form-section form .danger-input {
+  border: 1px solid var(--color-red);
+}
+.container .body-section .form-section form .danger-input:focus {
+  outline: none;
+  border: 2px solid var(--color-red);
+}
+.container .body-section .form-section form .success-input {
+  border: 1px solid var(--color-green);
+}
+.container .body-section .form-section form .success-input:focus {
+  outline: none;
+  border: 2px solid var(--color-green);
 }
 .container .body-section .form-section form .error-icon {
   display: flex;
@@ -185,6 +211,18 @@ body {
     align-items: center;
     border-radius: 0.5rem;
     padding: 2rem;
+  }
+  .container .body-section .form-section .eye-icon {
+    display: flex;
+    position: relative;
+    transform: translateY(-7rem) translateX(9.5rem);
+    cursor: pointer;
+  }
+  .container .body-section .form-section .eye-icon2 {
+    display: flex;
+    position: relative;
+    transform: translateY(-8.8rem) translateX(7.5rem);
+    cursor: pointer;
   }
   .container .body-section .form-section .error-icon {
     display: flex;
