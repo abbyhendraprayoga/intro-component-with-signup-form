@@ -79,24 +79,28 @@ body {
       align-items: center;
       border-radius: 0.5rem;
       padding: 2rem;
-      .error-icon {
-        display: flex;
-        position: relative;
-        transform: translateY(-3.81rem) translateX(6.5rem);
-      }
-      .error-icon-2 {
-        display: flex;
-        position: relative;
-        transform: translateY(-3.81rem) translateX(6.5rem);
-      }
 
       form {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: right;
+        align-items: end;
         text-align: right;
         width: 100%;
+
+        .error-icon {
+          display: flex;
+          position: relative;
+          transform: translateY(-3.81rem);
+          margin-right: 0.5rem;
+        }
+        .error-icon-2 {
+          display: flex;
+          margin-right: 0.5rem;
+          position: relative;
+          transform: translateY(-3.81rem);
+        }
+
         .error-msg {
           width: 100%;
           font-size: 14px;
@@ -189,12 +193,12 @@ body {
         .error-icon {
           display: flex;
           position: relative;
-          transform: translateY(-3.81rem) translateX(9.5rem);
+          transform: translateY(-3.81rem);
         }
         .error-icon-2 {
           display: flex;
           position: relative;
-          transform: translateY(-3.81rem) translateX(9.5rem);
+          transform: translateY(-3.81rem);
         }
       }
     }

@@ -82,23 +82,25 @@ body {
   border-radius: 0.5rem;
   padding: 2rem;
 }
-.container .body-section .form-section .error-icon {
-  display: flex;
-  position: relative;
-  transform: translateY(-3.81rem) translateX(6.5rem);
-}
-.container .body-section .form-section .error-icon-2 {
-  display: flex;
-  position: relative;
-  transform: translateY(-3.81rem) translateX(6.5rem);
-}
 .container .body-section .form-section form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: end;
   text-align: right;
   width: 100%;
+}
+.container .body-section .form-section form .error-icon {
+  display: flex;
+  position: relative;
+  transform: translateY(-3.81rem);
+  margin-right: 0.5rem;
+}
+.container .body-section .form-section form .error-icon-2 {
+  display: flex;
+  margin-right: 0.5rem;
+  position: relative;
+  transform: translateY(-3.81rem);
 }
 .container .body-section .form-section form .error-msg {
   width: 100%;
@@ -187,11 +189,11 @@ body {
   .container .body-section .form-section .error-icon {
     display: flex;
     position: relative;
-    transform: translateY(-3.81rem) translateX(9.5rem);
+    transform: translateY(-3.81rem);
   }
   .container .body-section .form-section .error-icon-2 {
     display: flex;
     position: relative;
-    transform: translateY(-3.81rem) translateX(9.5rem);
+    transform: translateY(-3.81rem);
   }
 }/*# sourceMappingURL=style.css.map */
