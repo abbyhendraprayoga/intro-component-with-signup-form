@@ -12,6 +12,14 @@
       href="./images/favicon-32x32.png"
     />
 
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
     <title>Frontend Mentor | Intro component with sign up form</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -49,11 +57,59 @@
           </div>
         </div>
         <div class="form-section">
-          <form id="submitForm">
-            <input type="text" placeholder="First Name" required />
-            <input type="text" placeholder="Last Name" required />
-            <input type="email" placeholder="Email Address" required />
-            <input type="password" placeholder="Password" required />
+          <form id="sign-up-form" novalidate>
+            <input
+              name="first-name"
+              type="text"
+              placeholder="First Name"
+              class="mb-3"
+            />
+            <span id="error-fn" class="error-msg text-danger d-none"></span>
+            <img
+              id="error-icon-fn"
+              class="error-icon d-none"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <input
+              type="text"
+              name="last-name"
+              placeholder="Last Name"
+              class="mb-3"
+            />
+            <span id="error-ln" class="error-msg text-danger d-none"></span>
+            <img
+              id="error-icon-ln"
+              class="error-icon d-none"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              class="mb-3"
+            />
+            <span id="error-em" class="error-msg text-danger d-none"></span>
+            <img
+              id="error-icon-em"
+              class="error-icon d-none"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              class="mb-3"
+            />
+            <span id="error-pw" class="error-msg text-danger d-none"></span>
+            <img
+              id="error-icon-pw"
+              class="error-icon d-none"
+              src="./images/icon-error.svg"
+              alt=""
+            />
             <button type="submit">CLAIM YOUR FREE TRIAL</button>
           </form>
           <div class="footer">

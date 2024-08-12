@@ -16,7 +16,7 @@
 
 body {
   max-width: 100vw;
-  min-height: 140vh;
+  min-height: 150vh;
   font-family: "Poppins", sans-serif;
   background-color: var(--color-red);
   background-image: url(images/bg-intro-mobile.png);
@@ -28,12 +28,11 @@ body {
 }
 
 .container {
-  height: 130vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 1.5rem;
+  padding: 1.5rem 1.5rem;
   transition: 0.3s ease-in-out;
   .header-section {
     margin: 0 0 1.5rem 0;
@@ -80,22 +79,35 @@ body {
       align-items: center;
       border-radius: 0.5rem;
       padding: 2rem;
+      .error-icon {
+        display: flex;
+        position: relative;
+        transform: translateY(-3.81rem) translateX(6.5rem);
+      }
+      .error-icon-2 {
+        display: flex;
+        position: relative;
+        transform: translateY(-3.81rem) translateX(6.5rem);
+      }
 
       form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: right;
         width: 100%;
-        .validate-error {
-          border: 1px solid var(--color-red) !important;
+        .error-msg {
+          width: 100%;
+          font-size: 14px;
         }
         input {
+          position: relative;
           width: 100%;
           height: 3.5rem;
           border-radius: 0.3rem;
           border: 1px solid var(--grayish-blue);
-          margin: 0 0 1rem 0;
+          // margin: 0 0 5rem 0;
           padding: 0 0 0 1rem;
           font-weight: bold;
         }
@@ -140,10 +152,10 @@ body {
 
 @media screen and (min-width: 475px) {
   body {
-    min-height: 90vh;
+    min-height: 120vh;
   }
   .container {
-    height: 90vh;
+    height: 120vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -161,6 +173,29 @@ body {
       .description {
         text-align: justify;
         width: 31rem;
+      }
+    }
+    .body-section {
+      .form-section {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        background-color: var(--color-white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        .error-icon {
+          display: flex;
+          position: relative;
+          transform: translateY(-3.81rem) translateX(9.5rem);
+        }
+        .error-icon-2 {
+          display: flex;
+          position: relative;
+          transform: translateY(-3.81rem) translateX(9.5rem);
+        }
       }
     }
   }
