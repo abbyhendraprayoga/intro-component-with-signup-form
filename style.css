@@ -34,6 +34,7 @@ body {
   max-height: 100%;
   height: 100%;
   width: 100%;
+  margin: 4rem 0 3rem 0;
   transition: 0.3s ease-in-out;
   overflow: hidden;
 }
@@ -47,7 +48,10 @@ body {
   text-align: center;
   width: 20rem;
   margin: 0 0 1rem 0;
-  font-size: 0.8rem;
+}
+.container .header-section .title h1 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 .container .header-section .description {
   color: var(--color-white);
@@ -85,12 +89,12 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
 }
 .container .body-section .form-section .eye-icon {
   display: flex;
   position: relative;
-  transform: translateY(-7rem) translateX(6.5rem);
+  transform: translateY(-7.5rem) translateX(6.5rem);
   cursor: pointer;
 }
 .container .body-section .form-section .eye-icon2 {
@@ -141,7 +145,7 @@ body {
 .container .body-section .form-section form input {
   position: relative;
   width: 100%;
-  height: 3.5rem;
+  height: 3rem;
   border-radius: 0.3rem;
   border: 1px solid var(--grayish-blue);
   padding: 0 0 0 1rem;
@@ -149,7 +153,7 @@ body {
 }
 .container .body-section .form-section form button {
   width: 100%;
-  height: 3.5rem;
+  height: 3rem;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -166,10 +170,10 @@ body {
 }
 .container .body-section .footer {
   color: var(--grayish-blue);
-  margin: 1rem 0 0 0;
   text-align: center;
   font-size: 0.7rem;
   width: 16rem;
+  height: 2rem;
 }
 .container .body-section .footer a {
   color: var(--color-red);
@@ -181,57 +185,68 @@ body {
   color: hsl(0, 53%, 60%);
 }
 
-@media screen and (min-width: 475px) {
-  .container {
+@media screen and (min-width: 1000px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  body .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 0;
   }
-  .container .header-section {
-    margin: 0 5rem 0 0;
+  body .container .header-section {
+    width: 31rem;
   }
-  .container .header-section .title {
+  body .container .header-section .title {
     display: flex;
     justify-content: left;
     text-align: left;
-    font-size: 1.6rem;
-    width: 29rem;
-    line-height: 3rem;
+    width: 100%;
+    height: 6rem;
     margin: 0 0 2rem 0;
   }
-  .container .header-section .description {
-    text-align: justify;
-    width: 31rem;
+  body .container .header-section .title h1 {
+    line-height: auto !important;
+    font-size: 3rem;
+    font-weight: 700;
   }
-  .container .body-section .form-section {
+  body .container .header-section .description {
+    text-align: justify;
     width: 100%;
-    height: 50%;
+  }
+  body .container .body-section .form-section {
+    width: 100%;
+    height: 100%;
     display: flex;
     background-color: var(--color-white);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    padding: 2rem;
+    padding: 1.5rem 1.5rem;
   }
-  .container .body-section .form-section .eye-icon {
+  body .container .body-section .form-section .eye-icon {
     display: flex;
     position: relative;
-    transform: translateY(-7rem) translateX(9.5rem);
+    transform: translateY(-6.3rem) translateX(9.5rem);
     cursor: pointer;
   }
-  .container .body-section .form-section .eye-icon2 {
+  body .container .body-section .form-section .eye-icon2 {
     display: flex;
     position: relative;
-    transform: translateY(-8.8rem) translateX(7.5rem);
+    transform: translateY(-8.1rem) translateX(7.5rem);
     cursor: pointer;
   }
-  .container .body-section .form-section .error-icon {
+  body .container .body-section .form-section .error-icon {
     display: flex;
     position: relative;
-    transform: translateY(-3.81rem);
+    transform: translateY(-3.6rem);
   }
-  .container .body-section .form-section .error-icon-2 {
+  body .container .body-section .form-section .error-icon-2 {
     display: flex;
     position: relative;
     transform: translateY(-3.81rem);
